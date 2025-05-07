@@ -1,0 +1,21 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.topimg {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: top;
+}

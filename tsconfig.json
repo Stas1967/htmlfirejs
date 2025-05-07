@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "importHelpers": true,
+        "target": "ES2022", // O la versión de JS que necesites
+        "module": "ES2022", // O "esnext" si usas bundler para navegador
+        "moduleResolution": "bundler",
+        "strict": true, // ¡Muy importante!
+        "esModuleInterop": true, // Generalmente útil
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true, // Opcional, si necesitas acelerar
+        "sourceMap": true, // ¡Importante para depuración!
+        "outDir": "./dist", // Directorio de salida     
+        "baseUrl": "./src",
+        "paths": {
+            "*": [
+                "*"
+            ]
+        },
+        "lib": [
+            "ES2022",
+            "dom"
+        ]
+    },
+    "include": [
+        "src/**/*.ts" // Incluye todos los archivos .ts en la carpeta src y subcarpetas
+        ,
+        "assets.d.ts",
+        "src/js/app.ts"
+    ],
+    "exclude": [
+        "node_modules" // Excluye la carpeta node_modules
+    ],
+}
